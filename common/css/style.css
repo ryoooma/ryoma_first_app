@@ -9,63 +9,127 @@ a:hover {
   color: #996600;
   }
 
-#page {
+.page {
   width: 980px;
   margin: 0 auto;
 }
 
+.topic-menu {
+  font-size: 12px;  
+}
+
+.page-top {
+  font-size: 12px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.page-top a {
+  background-image: url("../img/yazirusi-ue.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  padding-left: 10px;  
+}
+
 
 /* ヘッダー  */
-#page-head #site-title {
+.page-head .site-title {
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 0;
   font-family: serif;
 }
 
-#page-head #catch-copy {
+.page-head .catch-copy {
   font-size: 12px;
   line-height: 1.5;
   margin-top: 5px;
 }
 
+.page-head .global-navi {
+  border: solid #cccccc;
+  border-width: 1px 0;
+  padding: 10px 0; 
+}
+
+.page-head .global-navi ul {
+  margin: 0;
+  padding: 0;  
+}
+
+.page-head .global-navi ul li {
+  list-style: none;
+  width: 245px;
+  float: left; 
+  border-left: solid 1px #cccccc;
+  padding: 0 10px; 
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.429;
+}
+
+.page-head .global-navi ul li:first-child {
+  border-left: none;  
+}
+
+
+.page-head .global-navi ul li a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.page-head .global-navi ul li a:hover , 
+.page-head .global-navi ul li.current a {
+  background-color:#F2F2E5; 
+}
+
+
+.page-head .global-navi ul:after {
+  content: "";
+  clear: both;
+  display: block;  
+}
+
 
 /* フッター  */
-#page-foot {
+.page-foot {
   border-top: 1px solid #cccccc;
   margin-top: 15px;
 }
 
-#page-foot #copyright small {
+.page-foot .copyright small {
   font-size: 12px;
   line-height: 1.5;
 }
 
 
 /* ボディ  */
-#page-body {
+.page-body {
   margin-top: 30px
 }
 
-#page-body:after {
+.page-body:after {
   content:"";
   clear: both;
   display: block;
 }
 
-#page-body-main {
+.page-body-main {
   width: 720px;
   float: left;
 }
 
-#page-body-sub {
+.page-body-sub {
   width: 220px;
   float: right;
 }
 
 
 /*---- サブカラム  ----*/
-#page-body-sub h2 {
+.page-body-sub h2 {
   font-size: 16px;
   line-height: 1.375;
   padding: 5px;
@@ -73,30 +137,46 @@ a:hover {
   border-bottom: 1px solid #cccccc;
 }
 
-#page-body-sub ul {
+.page-body-sub ul {
   list-style: none;
   padding: 0;
 }
 
-#page-body-sub ul li {
+.page-body-sub ul li {
   font-size: 12px;
   line-height: 1.5;
   margin-top: 10px 5px;
 }
 
-#page-body-sub .news-list ul li time {
+.page-body-sub .news-list ul li time {
   font-weight: bold;
   display: block;
 }
 
+.page-body-sub .local-navi ul {
+  margin: 0 0 30px;
+  padding-left: 0;  
+}
+
+.page-body-sub .local-navi ul li {
+  font-size: 14px;
+  line-height: 1.429;
+  margin-bottom: 12px;
+  list-style-type: none;
+  background-image: url(../img/yazirusi-migi.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  padding-left: 10px;
+}
+
 /*---- メインカラム  ----*/
 
-#page-body-main p {
+.page-body-main p {
   font-size: 14px;
   line-height: 1.429;
 }
 
-#page-body-main .page-title {
+.page-body-main .page-title {
   font-size: 26px;
   background-color: #F2F2E5;
   padding: 5px 15px;
@@ -104,7 +184,7 @@ a:hover {
   margin-top: 0;
 }
 
-#page-body-main .heading-type-a {
+.page-body-main .heading-type-a {
   font-size: 18px;
   color: #349FA6;
   border-bottom: solid 1px #349FA6;
@@ -112,87 +192,137 @@ a:hover {
   line-height: 1.333;
 }
 
-#page-body-main .heading-type-b {
+.page-body-main .heading-type-b {
   font-size: 16px;
   border-left: solid 5px #E3E4D9;
   padding-left: 10px;
   line-height: 1.375;
 }
 
-#page-body-main .heading-type-c {
+.page-body-main .heading-type-c {
   font-size: 14px; 
   line-height: 1.429;
 }
 
-#page-body-main .article-detail-head {
+.page-body-main .article-detail-head {
   border-bottom: solid 1px #cccccc;
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
 
-#page-body-main .article-detail-foot {
+.page-body-main .article-detail-foot {
   border-top: solid 1px #cccccc;
   margin-top: 30px;
   padding-top: 15px;
 }
 
-#page-body-main .article-detail-body section {
+.page-body-main .article-detail-body section {
   margin: 30px 0;
 }
 
-#page-body-main .credit-unit {
+.page-body-main .credit-unit {
   padding: 10px;
   border: solid 1px #cccccc;
 }
 
-#page-body-main .credit-unit p {
+.page-body-main .credit-unit p {
   font-size: 12px;
   line-height: 1.5;
 }
 
+.page-body-main .about-img img {
+  text-align: center;
+  border-bottom: solid 1px #cccccc;
+}
 
-#page-body-main ul li {
+.page-body-main .article-list {
+  border: solid 1px #cccccc;
+  margin-bottom: 30px;  
+}
+
+.page-body-main .article-list a {
+  display: block;
+  padding: 10px;  
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-body-main .article-list a:after {
+  content: "";
+  clear: both;
+  display: block;  
+}
+
+.page-body-main .article-list a:hover {
+  opacity: 0.7;
+}
+
+.page-body-main .article-list a .article-list-text {
+  width: 370px;
+  float: right;
+}
+
+.page-body-main .article-list a .article-list-img {
+  width: 300px;
+  float: left;
+}
+
+.page-body .article-list a .article-list-text h1 {
+  font-size: 26px;
+  line-height: 1.308;
+}
+
+.page-body .article-list a .article-list-text p {
+  font-size: 14px;
+  line-height: 1.429;
+}
+
+.page-body-main .article-list a .article-list-img img {
+  vertical-align: bottom;  
+}
+
+.page-body-main ul li {
   font-size: 14px;
   list-style-type: square;
   line-height: 1.429;
 }
 
-#page-body-main table {
+.page-body-main table {
   font-size:14px ;
   border: 1px solid  #cccccc;
   width: 100%;
   line-height: 1.429;
 }
 
-#page-body-maintable th, 
-#page-body-main table td {
+.page-body-maintable th, 
+.page-body-main table td {
   border: 1px solid #cccccc;
   padding:5px 10px;
 }
 
-#page-body-main table th {
+.page-body-main table th {
   background-color: #EEEEEE;
   text-align: left;
 }
 
 
-#page-body-main table caption {
+.page-body-main table caption {
   text-align: left;
   font-weight: bold;
 }
 
-#pic_2 {
+.pic_2 {
   margin: 0px;  
 }
 
-#pic_3 {
+.pic_3 {
   margin: 0px;  
 }
 
-#pic_4 {
+.pic_4 {
   margin: 0px;  
 }
 
-#page-body-main figcaption {
+.page-body-main figcaption {
   font-size: 12px;  
 }
