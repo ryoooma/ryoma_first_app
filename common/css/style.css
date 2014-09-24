@@ -235,6 +235,32 @@ a:hover {
   border-bottom: solid 1px #cccccc;
 }
 
+.page-body-main .btn {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 30px 0 ; 
+  border-bottom: 1px dotted #cccccc; 
+}
+
+.page-body-main .btn a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #058BA9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #92CDDB, #058BA9);
+  border: 1px solid #058BA9;
+  box-shadow: 1px 1px 0 #9DDDED inset;
+  text-shadow: 0px -1px 0 #333333;
+  display: inline-block;
+}
+
+.page-body-main .btn a:hover {
+  opacity: 0.7;  
+}
+
 .page-body-main .article-list {
   border: solid 1px #cccccc;
   margin-bottom: 30px;  
@@ -279,6 +305,58 @@ a:hover {
 
 .page-body-main .article-list a .article-list-img img {
   vertical-align: bottom;  
+}
+
+.page-body .main-visual {
+  position: relative;  
+}
+
+.page-body .main-visual img {
+  vertical-align: bottom;  
+}
+
+.page-body .main-visual .main-visual-text {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.4) ;
+  width: 400px;
+  padding: 15px 25px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.page-body .main-visual .main-visual-text h1 {
+  font-size: 26px;
+  line-height: 1.231;
+  margin: 0px;  
+}
+
+.page-body .main-visual .main-visual-text p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.page-body .portfolio-index article {
+  width: 300px;
+  float: left;  
+  margin-left: 40px;
+}
+
+.page-body .portfolio-index article:first-child {
+  margin-left: 0 ; 
+}
+
+.page-body .portfolio-index {
+  margin-top: 40px;  
+}
+
+.page-body .portfolio-index:after {
+  conten: "";
+  clear: both;
+  display: block;
 }
 
 .page-body-main ul li {
@@ -326,3 +404,26 @@ a:hover {
 .page-body-main figcaption {
   font-size: 12px;  
 }
+
+.page-body .news {
+  margin-top: 40px;  
+}
+
+.page-body .news table tr td {
+  width: 100%;
+}
+
+.page-body .news table tr th,
+.page-body .news table tr td {
+  font-size: 14px;
+  line-height: 1.429;
+  border-bottom: 1px dotted #cccccc;
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+.page-body .news table tr th {
+  white-space: nowrap;
+  padding-right: 30px;
+}
+
