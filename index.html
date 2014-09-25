@@ -6,6 +6,20 @@
 <link rel="stylesheet" href="common/css/style.css">
 <link rel="stylesheet" href="common/css/normalize.css">
 
+<script src="common/js/jquery-1.11.1.min.js"></script>
+<script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+
+<script>
+$(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      speed: 800,
+      pause: 4000
+    });
+});
+</script>
+
 </head>
 <body>
 
@@ -26,12 +40,33 @@
 <div class="page-body">
 
   <section class="main-visual">
-    <div class="main-visual-text">
-      <h1>Engineer Debut</h1>
-      <p>bacerCMS、カフェサイト用テーマ<br>
-      bacerCMS2012 　テーマコンテスト　飲食店系テーマ賞受賞</p>
-    </div>
-    <img src="img/main-01.jpg" width:"980" height:"500" alt="">
+    <ul class="bxslider">
+      <li>
+        <div class="main-visual-text">
+          <h1>Engineer Debut</h1>
+          <p>bacerCMS、カフェサイト用テーマ<br>
+          bacerCMS2012 　テーマコンテスト　飲食店系テーマ賞受賞</p>
+        </div>
+        <img src="img/main-01.jpg" width:"980" height:"500" alt="">
+      </li>
+      <li>
+        <div class="main-visual-text">
+          <h1>Ryoma Wakita</h1>
+          <p>脇田竜馬の写真<br>
+          9月23日に撮影した写真をファンの皆さんにだけ先攻公開します！</p>
+        </div>
+        <img src="img/main-02.jpg" width:"980" height:"500" alt="">
+      </li>
+      <li>
+        <div class="main-visual-text">
+          <h1>水たまりを避けています</h1>
+          <p>シミュレーション画像<br>
+          町中を歩く中、水たまりをよけるシーンです。</p>
+        </div>
+        <img src="img/main-03.jpg" width:"980" height:"500" alt="">
+      </li>
+    </ul>
+
   </section>
 
   <section class="portfolio-index">
@@ -53,28 +88,12 @@
       <p>森山直太朗さんのHPにあるパララックス効果がおもしろい</p>
      </article>
   </section>
-
-  <section class="news">
-    <h1>お知らせ</h1>
-    <table>
-      <tr>
-        <th><time datetime="2014-09-24">2014年09月24日</time></th>
-        <td>KONISHIKIに隠し子が発覚！？</td>
-      </tr>
-      <tr>
-        <th><time datetime="2014-09-09">2014年09月09日</time></th>
-        <td>CRAZY合宿中に熊に遭遇！？<br>
-            アキさんが素手で熊を圧倒ww</td>
-      </tr>
-    </table>
-  </section>
 </div>
 <!-- 終了 page-body-->
 
 <footer class="page-foot">
-<p class="copyright"><small>Copyright&copy; 2014 Ryoma Wakita All Rights Reserved.</small></p>
+  <p class="copyright"><small>Copyright&copy; 2014 Ryoma Wakita All Rights Reserved.</small></p>
 </footer>
-</div>
 
 
 </body>

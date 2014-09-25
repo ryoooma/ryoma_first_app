@@ -339,6 +339,16 @@ a:hover {
   margin-bottom: 0;
 }
 
+.page-body .main-visual ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-body .main-visual ul li {
+  position: relative;  
+}
+
 .page-body .portfolio-index article {
   width: 300px;
   float: left;  
@@ -409,7 +419,13 @@ a:hover {
   margin-top: 40px;  
 }
 
-.page-body .news table tr td {
+.page-body .news h1 {
+  font-size: 20px;
+  border-bottom: 1px solid #CCCCCC
+  padding: 5px 0
+}
+
+.page-body .news table {
   width: 100%;
 }
 
@@ -426,4 +442,7 @@ a:hover {
   white-space: nowrap;
   padding-right: 30px;
 }
+
+.page-body .news table tr td {
+  width: 100%;
 
